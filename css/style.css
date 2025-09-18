@@ -158,7 +158,7 @@ strong {
 
 .small-title {
   text-transform: uppercase;
-  color:var(--gold-color);
+  color:var(--white-color);
   font-weight: (--font-weight-bold);
 }
 
