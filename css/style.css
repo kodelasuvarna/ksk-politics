@@ -391,7 +391,7 @@ strong {
 }
 
 .section-hero {
-  background-image: url('../images/jason-goodman-MUZFKa_mttU-unsplash.jpg');
+  background-image: url('/images/projects/projects\ \(2\).jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -624,8 +624,12 @@ strong {
 .projects-image {
   border-radius: 20px;
   width: 100%;
-  height: auto;
-  transition: all 0.3s;
+  height: 350px;
+  object-fit: cover; /* ensures images fit without stretching */
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  margin-top: 30px;
 }
 
 .projects-thumb-large .projects-image {
@@ -1301,4 +1305,33 @@ color:var(--primary-color);
   .about-quote {
     font-size: 16px;
   }
+}
+
+.whatsapp{
+  position: fixed;
+  right: 12px;
+  bottom:6rem;  
+  cursor: pointer;
+display: grid;
+place-items: center;
+  border-radius: 50%;
+  z-index: 10000;
+  opacity: 1;
+ width:50px;
+ height:50px;
+  background: var(--primary-color);
+}
+.whatsapp a{
+  padding: 0.3rem 0.3rem;
+}
+.whatsapp a i{
+ 
+  color: white !important;
+}
+.whatsapp:hover a i{
+
+color: var(--white-color) !important;
+}
+.whatsapp a i{
+  font-size: 2rem;
 }
