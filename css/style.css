@@ -1350,9 +1350,10 @@ nav ul a:hover::after {
   font-size: 18px;
   font-style: italic;
   margin: 30px 0;
-  padding-left: 20px;
+  padding-left: 10px;
   border-left: 4px solid var(--gold-color);
-  color: #1a1a2e;
+  /* color: #1a1a2e; */
+  color:var(--secondary-color)
 }
 
 .about-cta .btn {
