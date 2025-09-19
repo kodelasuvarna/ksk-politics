@@ -891,7 +891,7 @@ strong {
   }
 
   .site-header .social-icon {
-    text-align: right;
+    text-align: center;
     margin-top: 10px;
   }
 
@@ -955,6 +955,7 @@ strong {
 
   .site-header p {
     font-size: 14px;
+    text-align: center;
   }
 
   .carousel-control-next, 
