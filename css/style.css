@@ -1030,21 +1030,22 @@ filter: brightness(2); /* 1 = normal, >1 = brighter, <1 = darker */
 /* Tablet */
 @media (max-width: 992px) {
   .brand-logo {
-    height: 100px; /* slightly smaller */
+    height: 120px; /* slightly smaller */
   }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   .brand-logo {
-    height: 80px; /* adjust for mobile nav */
+    height: 100px;
+    width:100%; /* adjust for mobile nav */
   }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
   .brand-logo {
-    height: 65px; /* compact size */
+    height: 70px; /* compact size */
   }
 }
 
