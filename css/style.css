@@ -1422,3 +1422,34 @@ color: var(--white-color) !important;
 .whatsapp a i{
   font-size: 2rem;
 }
+
+
+/* Video Section */
+#videos {
+ 
+ background: linear-gradient(rgba(0, 200, 83, 0.9), rgba(0, 200, 83, 0.9)), url(/images/services/herosection-2.jpg) no-repeat center center / cover;
+    padding: 100px 0;
+    color: #fff;
+    position: relative; /* Light gray background */
+}
+
+#videos h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white-color);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#videos .ratio {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(230, 64, 64, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#videos .ratio:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 25px rgba(119, 68, 201, 0.25);
+}
