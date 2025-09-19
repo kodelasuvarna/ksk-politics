@@ -457,31 +457,104 @@ Together, we can create a safer and stronger society.</span>
       
       <!-- Video 1 -->
       <div class="col-lg-4 col-md-6 mb-4">
-        <video controls>
-      <source src="images/video-2.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+        <div class="ratio ratio-16x9 video-box">
+          <video controls poster="">
+            <source src="images/video-2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
 
       <!-- Video 2 -->
       <div class="col-lg-4 col-md-6 mb-4">
-        <video controls>
-      <source src="images/video-3.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+        <div class="ratio ratio-16x9 video-box">
+          <video controls poster="">
+            <source src="images/video-3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
 
       <!-- Video 3 -->
       <div class="col-lg-4 col-md-6 mb-4">
-       <video controls>
-      <source src="images/video-5.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+      <div class="ratio ratio-16x9 video-box">
+          <video controls poster="">
+            <source src="images/video-5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
+<!--contact start-->
+<div class="container mt-5 ">
+
+    <!-- Contact & Support -->
+    <section id="contact">
+      <h2 class="text-warning">Contact & Support</h2>
+      <p class="muted">Send a message, volunteer, or invite me for a meeting.</p>
+
+      <div class="card">
+        <form id="contactForm" action="sendmail.php" method="POST">
+          <div class="contact-wrap">
+            <div>
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" required placeholder="Your full name">
+            </div>
+            <div>
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com">
+            </div>
+            <div>
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="text" placeholder="+91 xxxx">
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option>Volunteer</option>
+                <option>Request a visit</option>
+                <option>Flag an issue</option>
+                <option>General message</option>
+              </select>
+            </div>
+            <div style="grid-column:1 / -1">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+          </div>
+
+          <div class="form-foot">
+            
+            <button type="button" class="btn btn-warning" onclick="fillVolunteer()">Sign Up To Volunteer</button>
+            <p class="muted" style="margin-left:auto;font-size:13px">Or email: 
+              <a href="mailto:kotashyamkumar.indian@gmail.com">kotashyamkumar.indian@gmail.com</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Support Campaign -->
+    <section id="donate" >
+      <h3 class="text-warning mt-3">Support the Campaign</h3>
+      <p class="muted">Your contributions help us reach more voters and amplify the message.</p>
+      <div >
+        <a class="btn btn-success"  href="contact.html" target="_blank">Donate Online</a>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    function fillVolunteer(){
+      document.getElementById('subject').value = 'Volunteer';
+      document.getElementById('message').value = 'I would like to volunteer. Please contact me with next steps.';
+      document.getElementById('name').focus();
+    }
+  </script>
 
             <section class="contact" id="section_5">
 
@@ -492,7 +565,7 @@ Together, we can create a safer and stronger society.</span>
                         <div class="row">
 
                             <div class="col-lg-6 col-12">
-                                <form class="custom-form contact-form" action="" method="post" role="form">
+                                <form class="custom-form contact-form" action="sendmail.php" method="POST" role="form">
                                     <small class="small-title text-warning">Contact <strong class="text-white">-</strong></small>
 
                                     <h2 class="mb-5 text-white">Say Hi to us</h2>
